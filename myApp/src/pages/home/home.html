@@ -8,4 +8,13 @@
   <button ion-button block (click)="openMenu()">
     Show Action Sheet
   </button>
+
+  <button ion-button (click)="takePicture()">
+    Take photo
+  </button>
+
+  <button ion-button>
+     Latest Picture:
+  </button>
+  <img [src]="base64Image" *ngIf="base64Image" />
 </ion-content>
