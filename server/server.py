@@ -7,7 +7,7 @@ host = ''
 port = 0
 
 if len(sys.argv) == 1:
-	port = 80
+	port = int(os.environ.get('PORT'))
 else:
 	port = int(sys.argv[1])
 print "Server starting on port " + str(port)
