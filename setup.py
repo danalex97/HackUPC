@@ -7,5 +7,5 @@ setup(
    author='ad5915',
    author_email='ad5915@ic.ac.uk',
    packages=['server'],
-   install_requires=['socket', 'threading', 'sys'],
+   install_requires=['socket', 'threading', 'sys', 'os', 'tensorflow'],
 )

@@ -4,6 +4,8 @@ from threading import *
 import sys
 import os
 
+import tensorflow as tf
+
 host = ''
 port = os.getenv('PORT', 3600)
 
