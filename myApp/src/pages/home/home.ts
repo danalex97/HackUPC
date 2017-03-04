@@ -36,6 +36,7 @@ export class HomePage {
          this.base64Image = "data:image/jpeg;base64," + imageData;
      }, (err) => {
         this.pic_taken = err;
+        console.log(this.pic_taken);
      });
    }
 
