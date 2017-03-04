@@ -43,8 +43,8 @@ while True:
 	csock, caddr = serversocket.accept()
 
 	print "Connection from: " + `caddr`
-	print req[0:100]
 	req = csock.recv(1024)
+	print req[0:100]
 
 	lines = req.split('\n')
 
