@@ -48,7 +48,7 @@ while True:
 	req = csock.recv(1024)
 	print req
 
-	csock.sendall("""HTTP/1.0 200 OK
+    csock.send("""HTTP/1.0 200 OK
 		Content-Type: text/html
 		<html>
 			<head>
@@ -60,7 +60,6 @@ while True:
 		</html>
 	""")
 	csock.close()
-
 
 	#clientsocket, address = serversocket.accept()
     #client(clientsocket, address)
