@@ -44,9 +44,7 @@ while True:
 
 	print "Connection from: " + `caddr`
 	req = csock.recv(1024)
-	print req[0:100]
-
-	lines = req.split('\n')
+	print req
 
 	csock.sendall("""HTTP/1.0 200 OK
 		Content-Type: text/html
