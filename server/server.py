@@ -49,7 +49,7 @@ while True:
 	req = csock.recv(1024)
 	print req
 
-	csock.send("""HTTP/1.0 200 OK
+	csock.send("""HTTP/1.1 200 OK
 		Content-Type: text/html
 		<html>
 			<head>
