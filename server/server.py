@@ -3,15 +3,14 @@ from threading import *
 
 import sys
 
+host = ''
 port = 0
+
 if len(sys.argv) == 1:
-	port = 3600
+	port = 80
 else:
 	port = int(sys.argv[1])
 print "Server starting on port " + str(port)
-
-host = ''
-port = 0 # let OS pick port for me
 
 print (host)
 print (port)
