@@ -40,6 +40,7 @@ serversocket.bind((host, port))
 # capacity = 5
 serversocket.listen(1)
 
+
 print ('Server started and listening.')
 while True:
 	csock, caddr = serversocket.accept()
