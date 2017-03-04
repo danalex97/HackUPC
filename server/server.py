@@ -59,6 +59,8 @@ while True:
 			</body>
 		</html>
 	""")
+	csock.close()
+
 
 	#clientsocket, address = serversocket.accept()
     #client(clientsocket, address)
