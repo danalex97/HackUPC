@@ -7,13 +7,14 @@ import os
 host = ''
 port = os.getenv('PORT', 3600)
 
-if len(sys.argv) != 1:
-	port = int(sys.argv[1])
 print "Server starting on port " + str(port)
-
 print (host)
+
 print (port)
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+port = int(port)
+host = socket.gethostname()
 
 serversocket.bind((host, port))
 
