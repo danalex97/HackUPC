@@ -2,13 +2,12 @@ import socket
 from threading import *
 
 import sys
+import os
 
 host = ''
-port = 0
+port = os.getenv('PORT', 3600)
 
-if len(sys.argv) == 1:
-	port = int(os.environ.get('PORT'))
-else:
+if len(sys.argv) != 1:
 	port = int(sys.argv[1])
 print "Server starting on port " + str(port)
 

@@ -1,1 +1,1 @@
-web: python server/server.py
+web: sudo python server/server.py
