@@ -1,8 +1,12 @@
+<script src="cordova.js"></script>
 <ion-header>
   <ion-navbar>
     <ion-title>Yey</ion-title>
   </ion-navbar>
 </ion-header>
+
+
+
 
 <ion-content padding class="action-sheets-basic-page">
   <button ion-button block (click)="openMenu()">
@@ -11,6 +15,10 @@
 
   <button ion-button (click)="takePicture()">
     Take photo
+  </button>
+
+  <button ion-button (click)="postPicture()">
+    Post photo
   </button>
 
   <button ion-button>

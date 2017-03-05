@@ -4,8 +4,8 @@
   <description>An awesome Ionic/Cordova app.</description>
   <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
   <content src="index.html"/>
-  <access origin="*"/>
-  <allow-navigation href="http://ionic.local/*"/>
+  <access origin="*" subdomains = "true"/>
+  <allow-navigation href="*"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
@@ -35,5 +35,6 @@
   <plugin name="cordova-plugin-console" spec="1.0.5"/>
   <plugin name="cordova-plugin-statusbar" spec="2.2.1"/>
   <plugin name="cordova-plugin-device" spec="1.1.4"/>
+  "<preference name="AndroidPersistentFileLocation" value="Compatibility" />"
   <plugin name="cordova-plugin-splashscreen" spec="~4.0.1"/>
 </widget>
